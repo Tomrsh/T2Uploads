@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>T2 Login</title>
+    <title>T2 Sinup</title>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="firebase.js"></script>
-    
 </head>
 <body>
     <div class="login-container">
@@ -20,8 +19,13 @@
         
         <!-- Login Form -->
         <div class="login-form">
-            <h2>Login</h2>
+            <h2>Sinup</h2>
             <form>
+                
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="username" id="username" name="username" required>
+                </div>
                 <div class="input-group">
                     <label for="email">E-mail</label>
                     <input type="text" id="email" name="email" required>
@@ -31,16 +35,14 @@
                     <input type="password" id="password" name="password" required>
                 </div>
                 <div id="BtBox">
-                    <a href="">Forget Password</a>
-                    <a href="" id="Register">Sinup here</a>
-                </div>
-                <div id="BtBox">
                     <button type="submit" id="Login">Login</button>
-
+                    <button type="submit" id="Register">Register</button>
                 </div>
             </form>
         </div>
     </div>
 
+
+  <script src="main.js"></script>
 </body>
 </html>
